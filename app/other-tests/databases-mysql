@@ -1,0 +1,9 @@
+SELECT 'Student', username, 'has grade',
+CASE 
+	WHEN grade <= 20 THEN 'E'
+    WHEN grade > 20 && grade <= 40 THEN 'D'
+    WHEN grade > 20 && grade <= 60 THEN 'C'
+    WHEN grade > 20 && grade <= 80 THEN 'B'
+ELSE 'A'
+END AS letter_grade
+FROM `jorge-test`.student;
