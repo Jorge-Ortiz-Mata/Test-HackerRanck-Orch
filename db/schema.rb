@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_05_050234) do
+ActiveRecord::Schema.define(version: 2022_04_05_152258) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2022_04_05_050234) do
     t.datetime "updated_at", precision: 6, null: false
     t.date "date_vaccine_take"
     t.date "date_vaccine_get"
+    t.decimal "latitude"
+    t.decimal "longitude"
   end
 
 end
